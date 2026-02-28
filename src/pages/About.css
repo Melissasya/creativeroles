@@ -1,0 +1,50 @@
+/* ===================== ABOUT SECTION STYLING ===================== */
+/* Denna CSS styr layout och typografi för "About"-sektionen på sidan. 
+   Innehållet centrerat, med maxbredd för text, tydliga rubriker och 
+   bra läsbarhet på olika skärmstorlekar. */
+
+.about {
+  padding: 6rem 1.5rem; /* ger luft runt sektionen */
+  display: flex;
+  justify-content: center; /* centrerar innehållet horisontellt */
+}
+
+.about-container {
+  max-width: 750px; /* begränsar textbredd för bättre läsbarhet */
+  text-align: left; /* vänsterjusterad text */
+}
+
+/* Huvudrubrik */
+.about h1 {
+  font-size: 2.8rem;
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+  color: #49797adc;
+}
+
+/* Del av rubriken med accentfärg */
+.about h1 span {
+  color: #990000;
+}
+
+/* Inledande text / lead */
+.about-lead {
+  font-size: 1.2rem;
+  color: #756c57;
+  margin-bottom: 2.5rem;
+}
+
+/* Huvudinnehåll i sektionen */
+.about-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem; /* luft mellan stycken */
+}
+
+/* Stycke-text */
+.about-content p {
+  color: #5c5545;
+  line-height: 1.7; /* ökar läsbarheten */
+  font-size: 1rem;
+}

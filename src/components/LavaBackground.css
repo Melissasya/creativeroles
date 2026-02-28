@@ -1,0 +1,64 @@
+/* ===================== LAVA/BLOB ANIMATION ===================== */
+/* Denna CSS skapar en dekorativ bakgrund med flytande färgblobs
+   (lava-liknande effekter) som rör sig över sidan.
+   Effekten används för visuellt djup och dynamik bakom innehållet. */
+
+.lava-wrapper {
+  position: absolute; /* positionerar wrappern över hela containern */
+  inset: 0; /* täcker hela föräldern */
+  overflow: hidden; /* döljer delar som går utanför */
+  z-index: 0; /* ligger bakom övrigt innehåll */
+  filter: blur(40px); /* suddig effekt för mjukare utseende */
+}
+
+/* Gemensam styling för varje flytande blob */
+.blob {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%; /* rund form */
+  opacity: 0.7; /* semitransparent */
+  animation: float 20s ease-in-out infinite; /* oändlig float-animation */
+}
+
+/* Individuella blobs med olika färg, position och delay för variation */
+.blob1 {
+  background: #ff4d6d;
+  top: 10%;
+  left: 10%;
+}
+
+.blob2 {
+  background: #ff758f;
+  top: 50%;
+  left: 40%;
+  animation-delay: 5s; /* fördröjd start för variation */
+}
+
+.blob3 {
+  background: #ff8fa3;
+  top: 30%;
+  left: 70%;
+  animation-delay: 10s;
+}
+
+.blob4 {
+  background: #ffb3c1;
+  top: 70%;
+  left: 20%;
+  animation-delay: 15s;
+}
+
+/* ===================== FLOAT ANIMATION ===================== */
+/* Definierar hur varje blob rör sig och skalar över tid för en organisk effekt */
+@keyframes float {
+  0% {
+    transform: translate(0px, 0px) scale(1);
+  }
+  50% {
+    transform: translate(60px, -80px) scale(1.2);
+  }
+  100% {
+    transform: translate(-40px, 60px) scale(1);
+  }
+}

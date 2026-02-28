@@ -1,0 +1,37 @@
+/* ===================== GLOBAL STYLING ===================== */
+/* Denna CSS definierar grundläggande styling för hela sidan, 
+   inklusive body, navigering och huvudcontent. 
+   Syftet är att sätta typsnitt, färger och layoutstandarder. */
+
+/* ================= BODY ================= */
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-color: #f0ead8;
+  color: #eeeeeee6;
+}
+
+/* ================= NAVIGATION ================= */
+/* Stil för huvudmenyn */
+nav {
+  width: 100%;
+  background-color: #f0ead8;
+  padding: 1rem 2rem;
+  display: flex;
+  gap: 1.5rem;
+}
+
+/* Länkar i navigation */
+nav a {
+  color: #eba39fc2;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* ================= HUVUDINNEHÅLL ================= */
+/* Container för huvudinnehållet */
+.main-content {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1rem;
+}

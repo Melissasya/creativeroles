@@ -1,0 +1,89 @@
+/* ===================== JOB CARD STYLING ===================== */
+/* Detta block definierar utseendet på varje jobbkort på sidan.
+   Kortet har en bakgrundsbild med gradient, rundade hörn och padding.
+   Hover-effekt används för att ge en lätt upphöjd känsla och skugga. */
+
+.job-card {
+  background-image:
+    linear-gradient(rgba(15, 23, 42, 0.411), rgba(15, 23, 42, 0.5)),
+    url("/public/jobcard.jpg"); /* Bakgrundsbild + gradient för bättre textkontrast */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  transition: 0.3s ease; /* mjuk animation vid hover */
+}
+
+/* Hover-effekt för jobbkort: lyfter kortet och lägger till skugga */
+.job-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+/* Jobbtitel */
+.job-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+  color: #f8e6ba;
+}
+
+/* Företagsnamn */
+.company {
+  color: #f8e6ba;
+  margin-bottom: 1rem;
+}
+
+/* Container för badges (t.ex. remote, onsite) */
+.badges {
+  display: flex;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+/* Individuell badge-styling */
+.badge {
+  font-size: 0.75rem;
+  padding: 0.4rem 0.9rem;
+  border-radius: 999px;
+  font-weight: 600;
+}
+
+/* Olika typer av badges */
+.remote,
+.onsite,
+.worktype {
+  background: #990000c1;
+  color: #fcf5e4;
+  border: 1px solid #990000e0;
+}
+
+/* Publiceringsdatum */
+.date {
+  font-size: 0.85rem;
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+/* Kortbeskrivning */
+.description {
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+/* Länk till ansökan */
+.apply-link {
+  display: inline-block;
+  margin-top: 1.5rem;
+  font-weight: 600;
+  color: #f8e6ba;
+  transition: 0.3s ease;
+}
+
+/* Hover-effekt på ansökningslänk */
+.apply-link:hover {
+  opacity: 0.8;
+  color: #990000;
+}
